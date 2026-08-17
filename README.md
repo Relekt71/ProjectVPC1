@@ -60,16 +60,11 @@
 
 ### 6. Подключение к публичной ВМ
 
-> *Вставьте скриншот: Терминал с подключением к public-vm*
-
-
 ssh yc-user@62.84.112.253
 
 <img width="815" height="530" alt="image" src="https://github.com/user-attachments/assets/63338db8-f63b-4330-907c-ee73710d14f0" />
 
 7. Подключение к приватной ВМ через публичную
-
-    Вставьте скриншот: Терминал с подключением к private-vm через public-vm
 
 bash
 
