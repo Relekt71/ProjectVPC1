@@ -8,17 +8,13 @@
 
 ### 1. Созданные VPC и подсети
 
-> *Вставьте скриншот: VPC → Подсети*
-
-![VPC и подсети](screenshots/vpc-subnets.png)
+<img width="1152" height="88" alt="image" src="https://github.com/user-attachments/assets/e5ccc620-f3e6-44b9-a842-652e3a7ce911" />
 
 ---
 
 ### 2. NAT-инстанс
 
-> *Вставьте скриншот: Compute Cloud → Виртуальные машины → nat-instance*
-
-![NAT-инстанс](screenshots/nat-instance.png)
+<img width="1631" height="54" alt="image" src="https://github.com/user-attachments/assets/8f30b685-9f24-493e-92d4-d480c5c9269b" />
 
 **Параметры NAT-инстанса:**
 - Имя: `nat-instance`
@@ -32,7 +28,7 @@
 
 > *Вставьте скриншот: VPC → Таблицы маршрутизации → private-route-table*
 
-![Таблица маршрутизации](screenshots/route-table.png)
+<img width="1211" height="79" alt="image" src="https://github.com/user-attachments/assets/db814f8a-f9bb-4ee9-b4bc-e88a389e830e" />
 
 **Маршрут:**
 - Префикс назначения: `0.0.0.0/0`
@@ -42,9 +38,7 @@
 
 ### 4. Публичная ВМ (бастион-хост)
 
-> *Вставьте скриншот: Compute Cloud → Виртуальные машины → public-vm*
-
-![Публичная ВМ](screenshots/public-vm.png)
+<img width="1673" height="49" alt="image" src="https://github.com/user-attachments/assets/50831686-3be4-42dc-8d77-16fa85511362" />
 
 **Параметры:**
 - Имя: `public-vm`
@@ -55,9 +49,7 @@
 
 ### 5. Приватная ВМ
 
-> *Вставьте скриншот: Compute Cloud → Виртуальные машины → private-vm*
-
-![Приватная ВМ](screenshots/private-vm.png)
+<img width="1674" height="49" alt="image" src="https://github.com/user-attachments/assets/a7c2529a-7641-4222-9c25-eb522c29374d" />
 
 **Параметры:**
 - Имя: `private-vm`
@@ -70,10 +62,11 @@
 
 > *Вставьте скриншот: Терминал с подключением к public-vm*
 
-```bash
+
 ssh yc-user@62.84.112.253
 
-https://screenshots/ssh-public-vm.png
+<img width="815" height="530" alt="image" src="https://github.com/user-attachments/assets/63338db8-f63b-4330-907c-ee73710d14f0" />
+
 7. Подключение к приватной ВМ через публичную
 
     Вставьте скриншот: Терминал с подключением к private-vm через public-vm
@@ -82,25 +75,17 @@ bash
 
 ssh yc-user@192.168.20.32
 
-https://screenshots/ssh-private-vm.png
+<img width="815" height="530" alt="image" src="https://github.com/user-attachments/assets/e967a83e-9df5-4afb-bcc2-229c66db37c1" />
+
 8. Проверка доступа в интернет с приватной ВМ
+   
+<img width="736" height="224" alt="image" src="https://github.com/user-attachments/assets/bcd5cf67-4fb8-48de-a58a-98adc9ba8add" />
 
-    Вставьте скриншот: Результат ping ya.ru с private-vm
-
-bash
-
-ping ya.ru -c 4
-
-https://screenshots/ping-private-vm.png
 9. Проверка маршрутизации через NAT-инстанс
 
-    Вставьте скриншот: Результат traceroute ya.ru с private-vm
+    traceroute ya.ru
 
-bash
-
-traceroute ya.ru
-
-https://screenshots/traceroute-private-vm.png
+<img width="909" height="160" alt="image" src="https://github.com/user-attachments/assets/7fede030-bde1-455f-9882-70b764dbe880" />
 
 Результат:
 text
