@@ -1,11 +1,5 @@
 # Создание VPC и NAT-инстанса в Yandex Cloud
 
-## 📋 Описание задания
-
-
-##  Архитектура
-
-
 ### 1. Созданные VPC и подсети
 
 <img width="1152" height="88" alt="image" src="https://github.com/user-attachments/assets/e5ccc620-f3e6-44b9-a842-652e3a7ce911" />
